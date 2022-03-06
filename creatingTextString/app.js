@@ -15,7 +15,7 @@ console.log("The text string have: " + food.length + " letters");
 //*** Search Methods | Part 1
 
 
-let message = "I am Learning Javascript and i am learning a lot";
+//let message = "I am Learning Javascript and i am learning a lot";
 
 let result;
 
@@ -48,6 +48,32 @@ let result;
 //result = message.substring(5, 13);
 
 // charAt: //** devuelve el caracter en la posicion que se pasa como parametro */
-result = message.charAt(5);
+//result = message.charAt(5);
+
+//console.log(result);
+
+//*****************************
+//*** Search for specific text strings
+
+let message = "I am learning Javascript";
+
+// startWith //** devuelve un booleano si la cadena comienza con el valor que se le pasa al metodo como parametro */
+//result = message.startsWith("I");
+
+//** creamos la variable inText y le asignamos la posicion resultado de la busqueda de la palabra Javascript con el metodo indexOf; luego, le asignamos a la variable result, la busqueda con el metodo startsWith de la combinacion "Ja" como primer parametro, le pasamos como segundo parametro la variable inText que contiene la posicion inicial de la palabra Javascript, indicando asi, el inicio de la busqueda a partir de la palabra misma. */
+let inText = message.indexOf("Javascript");
+result = message.startsWith("Ja", inText);
+
+
+
+// endsWith //** valida si la cadena finaliza en el valor pasado como parametro al metodo y devuelve un booleano dependiendo de su resultado */
+//result = message.endsWith("pt");
+
+// result = message;
+
+// includes
+// result = message;
+
+// result = message;
 
 console.log(result);
