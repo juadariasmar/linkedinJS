@@ -3,13 +3,13 @@
 //*************************
 //*** Creating Text String
 
-let country = 'Mexico';
+//let country = 'Mexico';
 
-let food = new String('Ceviche');
+//let food = new String('Ceviche');
 
-console.log("The text string have: " + country.length + " letters");
+//console.log("The text string have: " + country.length + " letters");
 
-console.log("The text string have: " + food.length + " letters");
+//console.log("The text string have: " + food.length + " letters");
 
 //*************************
 //*** Search Methods | Part 1
@@ -55,23 +55,59 @@ let result;
 //*****************************
 //*** Search for specific text strings
 
-let message = "I am learning Javascript";
+let message = "   I am learning Javascript   ";
 
 // startWith //** devuelve un booleano si la cadena comienza con el valor que se le pasa al metodo como parametro */
 //result = message.startsWith("I");
 
-//** creamos la variable inText y le asignamos la posicion resultado de la busqueda de la palabra Javascript con el metodo indexOf; luego, le asignamos a la variable result, la busqueda con el metodo startsWith de la combinacion "Ja" como primer parametro, le pasamos como segundo parametro la variable inText que contiene la posicion inicial de la palabra Javascript, indicando asi, el inicio de la busqueda a partir de la palabra misma. */
-let inText = message.indexOf("Javascript");
-result = message.startsWith("Ja", inText);
+//** creamos la variable inText y le asignamos la posicion resultado de la busqueda de la palabra Javascript con el metodo indexOf; luego, le asignamos a la variable result, la validacion con el metodo startsWith de la combinacion "Ja" como primer parametro, le pasamos como segundo parametro la variable inText que contiene la posicion inicial de la palabra Javascript, indicando asi, el inicio de la busqueda a partir de la palabra misma. */
+//let inText = message.indexOf("Javascript");
+//result = message.startsWith("Ja", inText);
 
 
 
 // endsWith //** valida si la cadena finaliza en el valor pasado como parametro al metodo y devuelve un booleano dependiendo de su resultado */
-//result = message.endsWith("pt");
+//result = message.endsWith("Javascript");
 
 // result = message;
 
-// includes
+// includes //** validacion con el metodo .includes si la cadena incluye un valor en especifico, en este caso, la palabra "Javascript" */
+//result = message.includes("Javascript");
+
+// result = message;
+
+//console.log(result);
+
+//***************************************
+//*** Generation, replacement and separation methods
+
+
+// repeat //** repeticion de la cadena n cantidad de veces */
+//result = message.repeat(2);
+
+// replace //** este metodo recibe dos parametros, el primero es la palabra a reemplazar y el segundo parametro es el valor por el que se va a cambiar. La cadena generada es totalmente nueva, dejando la primer cadena intacta */
+//result = message.replace("Javascript", "to program");
+
+// slice //** metodo que recibe dos parametros: el primer parametro es el indice de inicio y el segundo parametro es el indice final; dando como resultado el retorno de el trozo especificado */
+//result = message.slice(5);
+//result = message.slice(5, message.length);
+
+// split //** el metodo .split lo que hace es dividir una cadena en un array de cadenas usando el separador especificado. */
+//result = message.split(" ");
+
+// trim //** elimina los espacios en blanco al inicio y final de una cadena, devolviendo entonces, solo el texto. */
+//result = message.trim();
+
+//console.log(result);
+
+//*****************************
+//*** Text transformation methods
+
+let message2 = " y programacion";
+let total = 123456;
+
+result = total.toString();
+// result = message;
 // result = message;
 
 // result = message;
