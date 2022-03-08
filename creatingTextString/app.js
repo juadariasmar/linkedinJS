@@ -55,7 +55,7 @@ let result;
 //*****************************
 //*** Search for specific text strings
 
-let message = "   I am learning Javascript   ";
+//let message = "   I am learning Javascript   ";
 
 // startWith //** devuelve un booleano si la cadena comienza con el valor que se le pasa al metodo como parametro */
 //result = message.startsWith("I");
@@ -103,13 +103,35 @@ let message = "   I am learning Javascript   ";
 //*****************************
 //*** Text transformation methods
 
-let message2 = " y programacion";
-let total = 123456;
+//let message2 = " and programming";
+//let total = 123456;
 
-result = total.toString();
-// result = message;
-// result = message;
+//result = total.toString();
+//result = message.toLowerCase();
+//result = message.toLocaleUpperCase();
 
-// result = message;
+//result = message.concat(message2);
 
-console.log(result);
+//console.log(result);
+
+
+//***********************************
+//*** Templates and literals
+
+//let language = 'JavaScript';
+
+//let language2 = 'HTML';
+
+//let message = `Me gusta ${language} y su integracion con ${language2}`;
+
+//console.log(message);
+
+//------ Mensaje multilinea
+//let multilineMessage = `
+/*Hola mundo, estoy aprendiendo 
+    ${language} y me gusta 
+    como se integra con 
+    ${language2}
+`;*/
+
+//console.log(multilineMessage);
