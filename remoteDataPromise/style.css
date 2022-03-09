@@ -23,6 +23,7 @@ body {
 #container {
     width: 60%;
     flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 h1 {
