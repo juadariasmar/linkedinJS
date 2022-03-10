@@ -1,7 +1,7 @@
 'use strict'
 
 //*******************************
-//*** Getting data with Fetch
+//*** working with promises 
 
 let button = document.getElementById('button');
 let container = document.getElementById('container');
@@ -9,8 +9,26 @@ let countFlags = document.getElementById('flags');
 
 button.addEventListener('click', function() {
 
+    getPosts()
+        .then(data => data.json())
+        .then(posts => {
+            showData(posts);
+            return getCountries();
+        })
+        .then(data => data.json())
+        .then(countries => {
+            showFlags(countries);
+        });
 
-})
+});
+
+function getPosts() {
+    return fetch('https://jsonplaceholder.typicode.com/posts');
+}
+
+function getCountries() {
+    return fetch('https://restcountries.com/v3.1/all');
+}
 
 function showFlags(countries) {
     countFlags.innerHTML = '';
@@ -21,5 +39,18 @@ function showFlags(countries) {
         flag.height = '20';
 
         countFlags.appendChild(flag);
+    })
+}
+
+function showData(posts) {
+    posts.map((post, i) => {
+        let title = document.createElement('h1');
+        let content = document.createElement('p');
+
+        title.innerHTML = (i + 1) + " - " + post.title;
+        content.innerHTML = post.body;
+
+        container.appendChild(title);
+        container.appendChild(content);
     })
 }

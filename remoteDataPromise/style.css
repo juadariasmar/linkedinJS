@@ -20,10 +20,22 @@ body {
     flex-wrap: wrap;
 }
 
+#flags {
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    margin: 5px;
+    background-color: #ccc;
+}
+
 #container {
     width: 60%;
     flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 h1 {
