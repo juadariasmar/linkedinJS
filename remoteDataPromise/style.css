@@ -52,3 +52,19 @@ p {
     text-align: center;
     flex-wrap: wrap;
 }
+
+.hide {
+    display: none;
+}
+
+#messages {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    background-color: lightcoral;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}

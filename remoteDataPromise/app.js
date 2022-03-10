@@ -4,6 +4,7 @@
 //*** working with promises 
 
 let button = document.getElementById('button');
+let messages = document.getElementById('messages')
 let container = document.getElementById('container');
 let countFlags = document.getElementById('flags');
 
@@ -18,7 +19,12 @@ button.addEventListener('click', function() {
         .then(data => data.json())
         .then(countries => {
             showFlags(countries);
-        });
+        })
+        .catch(error => {
+            messages.classList.toggle('hide');
+            messages.innerHTML = error;
+            setTimeout(() => messages.classList.toggle('hide'), 3000);
+        })
 
 });
 
